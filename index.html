@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn 99</title>
+    <title>Names 99</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="all">
+    <div class="app">
+
         <div id="language-selection" class="language-selection">
             <input type="radio" id="eng" name="language" value="eng" checked>
             <label for="eng">English</label>
             <input type="radio" id="aze" name="language" value="aze">
             <label for="aze">Azərbaycanca</label>
         </div>
-        <span id="final-result"></span>
-        <br>
+
+        <span id="final-result" class="final-result" aria-live="polite"></span>
+
         <div class="container">
             <div class="card" id="card">
-                <div class="front-card" id="front-card" onclick="flipCard()">
+                <div class="front-card" id="front-card">
                     <span id="front-text">Welcome!</span>
                 </div>
             </div>
-            <div class="options" id="options"></div>
+            <div class="options" id="options" role="list"></div>
         </div>
-        <button class="btn" id="btn" onclick="showNextCard()">Start</button>
-        <br><br>
-        <span id="counter"></span>
+
+        <button class="btn" id="btn">Start</button>
+
+        <span id="counter" class="counter" aria-live="polite"></span>
+    
     </div>
 
     <script src="function.js"></script>
