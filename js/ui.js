@@ -13,7 +13,6 @@ export class UI {
         this.data = data;
         this.currentLang = lang;
         this.cacheElements();
-        this.bindEvents();
     }
 
     cacheElements() {
